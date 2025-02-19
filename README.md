@@ -8,6 +8,7 @@
         - Place Creation: A user creates a new place listing.
         - Review Submission: A user submits a review for a place.
         - Fetching a List of Places: A user requests a list of places based on certain criteria.
+ - 4bis : add methods (GET, POST, etc... on sequence diagram)
  - 5.Proofreading / Correction / Criticism and completion of the .md HBNB project
 
 
