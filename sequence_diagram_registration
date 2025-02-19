@@ -11,4 +11,3 @@ BusinessLogic->>Database: Insert new user
 Database-->>BusinessLogic: Success
 BusinessLogic-->>API: User Created (ID: 123)
 API-->>User: Created (userID: 123)
-
