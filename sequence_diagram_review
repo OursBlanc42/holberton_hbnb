@@ -1,6 +1,6 @@
 sequenceDiagram
 
-# Create a place
+# Create a review
 User->>API: Create a review (username, review, place, date)
 API->>BusinessLogic : Validate review (length of the reviewing text)
 BusinessLogic-->>API: Validate / Refuse
