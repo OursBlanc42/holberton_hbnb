@@ -4,6 +4,12 @@ sequenceDiagram
 User->>API: POST Register a user (email, password, first_name, last_name)
 API->>BusinessLogic: Validate email format
 BusinessLogic-->>API: Validate / Refuse
+API->>BusinessLogic: Validate password format
+BusinessLogic-->>API: Validate / Refuse
+API->>BusinessLogic: Validate first name format
+BusinessLogic-->>API: Validate / Refuse
+API->>BusinessLogic: Validate last name format
+BusinessLogic-->>API: Validate / Refuse
 API->>BusinessLogic: Check if email exists
 BusinessLogic->>Database: Query email existence
 Database-->>BusinessLogic: Email not found

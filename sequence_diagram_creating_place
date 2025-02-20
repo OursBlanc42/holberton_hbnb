@@ -20,6 +20,7 @@ API->>BusinessLogic : Validate latitude (range -90 to +90)
 BusinessLogic-->>API: Validate
 API->>BusinessLogic : Validate longitude (range -180 to +180)
 BusinessLogic-->>API: Validate
+API->>BusinessLogic : Check if place exist
 BusinessLogic->>Database : Query place existence
 Database-->>BusinessLogic: Place not found
 BusinessLogic->>Database: Insert new place (ID: 123)
