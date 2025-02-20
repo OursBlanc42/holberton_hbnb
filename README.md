@@ -65,7 +65,7 @@ The data retrieve and store from the DB
 
 This layer contains the DB.
 
-![High level Package Diagram](Package Diagram.png)
+![Package Diagram.png](https://github.com/OursBlanc42/holberton_hbnb/blob/main/Package%20Diagram.png)
 
 ## Detailed Class Diagram
 
