@@ -52,13 +52,15 @@ This diagram describes the architecture of the app (layered architecture).
 #### Presentation Layer (Front-end):
 - Manages interaction between clients and services through the API.
 
+- The Facade centralizes communication between client and business layer.
+  
 This layer contains the user interface and API
 
 #### Business Layer (Back-end):
-- Contains the core business logic of the application.
+- Contains the core business logic of the application and the class models.
 
-This layer works wwith User, Place, Review, and Amenity.
-The data retrieve and store from the DB
+This layer works with User, Place, Review, and Amenity.
+The data is retrieved and stored in the DataBase.
 
 #### Persistence Layer (Back-end):
 - Manages data storage and retrieval.
