@@ -65,9 +65,7 @@ The data retrieve and store from the DB
 
 This layer contains the DB.
 
-# INSERER ICI L'IMAGE DU PACKAGE DIAGRAM
-
----
+![High level Package Diagram](Package Diagram.png)
 
 ## Detailed Class Diagram
 
