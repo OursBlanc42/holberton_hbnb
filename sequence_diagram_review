@@ -6,6 +6,7 @@ API->>BusinessLogic : Validate review (length of the reviewing text)
 BusinessLogic-->>API: Validate / Refuse
 API->>BusinessLogic : Validate date (not a date in the future)
 BusinessLogic-->>API: Validate / Refuse
+API->>BusinessLogic : Check if review exist
 BusinessLogic->>Database : Query review existence (same place same date)
 Database-->>BusinessLogic: Review not found
 BusinessLogic->>Database : Create a new review 
