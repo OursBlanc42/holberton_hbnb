@@ -92,6 +92,8 @@ The OOP architecture allows us to avoid code duplication by using a base model c
 - Stores user information.
 - Open question regarding permissions management (admin access).
 - Registrer is different from user creation, because only an admin can create a user from scratch, while regular customers must register their own accounts.
+- The method for validating email is placed in `User` and not in the `BaseModel` because only the `user needs to validate an email.
+
 
 #### Place
 - Associates a place with an owner.
@@ -105,6 +107,11 @@ The OOP architecture allows us to avoid code duplication by using a base model c
 
 ### Return of Methods:
 - Boolean values (`True/False`) to indicate whether an action was successful or failed.
+
+### Miscellaneous :
+- Even if some methods in different classes seem similar, we prefer to distinguish them (one per class) because their constraints are not the same.
+**Exemple**
+A description, a comment, a password, and a name are all strings, but their length limits and specific constraints differ for each one.
 
 [ class diagram ]
 
